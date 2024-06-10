@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>小田&小许的女装店</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="fonts/icomoon.css">
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <!--Bootstrap ================================================== -->
+  <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.0-alpha3/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="shop.css">
+  <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;700;800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="shopify header-style2 bg-accent-light">
+  <header id="header" class=" bg-light ">
+    <div class="header-wrap container py-3">
+      <div class="row align-items-center">
+        <div class="primary-nav col-md-5 col-sm-2">
+          <nav class="navbar">
+            <div class="main-menu">
+              <ul class="menu-list list-unstyled d-flex m-0 ">
+                <li class="menu-item dropdown">
+                  <a class="text-uppercase item-anchor dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"> 主页 </a>
+                  <ul class="dropdown-menu">
+                    <li class="sub-page"><a class="text-black text-uppercase dropdown-item"
+                        href="shop_home_page.html">首页 </a></li>
+                  </ul>
+                </li>
+                <li class="menu-item dropdown">
+                    <a class="text-uppercase item-anchor dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"> 商店 </a>
+                  <ul class="dropdown-menu">
+                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="womenshop.html">
+                        女装商店 </a></li>
+                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="manshop.html">
+                          男装商店 </a></li>
+                    <li class="sub-page pe-0"><a class="text-black text-uppercase dropdown-item" href="accessories.html">
+                            配饰商店 </a></li>      
+                  </ul>
+                </li>
+              </ul>
+              <div class="hamburger style2">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="col-md-2 col-sm-4 brand-block ">
+          <div class="main-logo text-lg-center">
+              <h1 style="font-family: Arial, Helvetica, sans-serif;"><a style="font-size: large;">T&X CLOTHSHOP</a></h1>
+          </div>
+        </div>
+        <div class="right-block col-md-5 col-sm-4">
+          <nav class="navbar justify-content-end">
+            <div class="user-items">
+              <ul class="list-unstyled d-flex align-items-center m-0">
+                <li>
+                  <i class="icon icon-user"></i>
+                  <a>登录账户</a>
+                </li>
+
+                <li>
+                  <a href="#" class="like">
+                    <i class="icon icon-like"></i>
+                    <span>(0)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="cart for-buy">
+                    <i class="icon icon-shopping-cart"></i>
+                    <span>(0)</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="hero-section jarallax position-relative">
+    <img src="images/background.jpg" class="hero-image jarallax-img">
+    <div class="hero-content d-flex justify-content-center text-center align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="content-light text-center">
+            <h1 class="page-title">商店</h1>
+            <div class="breadcrumbs">
+              <span class="item">
+                <a href="test2.html">首页 ></a>
+              </span>
+              <span class="item">女装商店</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="shopify-grid padding-large">
+    <div class="container">
+      <div class="row">
+        <main class="col-md-9 p-0">
+          <div class="">
+            <div class="row">
+              <div class="filter-shop d-md-flex justify-content-between align-items-center">
+                <div class="showing-product">
+                  <p>显示9个女装商品</p>
+                </div>
+                <div class="input-group sort-by">
+                  <select id="input-sort" class="form-control" data-filter-sort="" data-filter-order="">
+                    <option value="">默认排序</option>
+                    <option value="">按字母顺序（A-Z）</option>
+                    <option value="">按字母顺序（Z-A）</option>
+                    <option value="">价格由低到高</option>
+                    <option value="">价格由高到低</option>
+                  </select>
+                </div>
+              </div>
+              <div class="product-element d-flex justify-content-between flex-wrap p-0">
+                <div class="col-md-4 mt-4 product-item element-item position-relative">
+                  <div class="image-holder">
+                    <img src="images/product1.jpg" alt="product-item" class="product-image">
+                  </div>
+                  <div class="cart-concern ms-2">
+                    <div class="cart-button d-flex flex-wrap">
+                      <div class="btn-left">
+                        <a href="#" class="btn btn-medium btn-light">加入购物车</a>
+                      </div>
+                      <button type="button" class="btn btn-light wishlist-btn">
+                        <i class="icon icon-like"></i>
+                      </button>
+                      <button type="button" class="btn btn-light view-btn 
+                            d-flex">
+                        <i class="icon icon-crop"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-detail text-center">
+                    <h3 class="product-title">
+                      <a>夏季纯白连衣裙</a>
+                    </h3>
+                    <span class="item-price text-primary">300CNY</span>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-4 product-item element-item position-relative">
+                  <div class="image-holder">
+                    <img src="images/product2.jpg" alt="product-item" class="product-image">
+                  </div>
+                  <div class="cart-concern ms-2">
+                    <div class="cart-button d-flex flex-wrap">
+                      <div class="btn-left">
+                        <a href="#" class="btn btn-medium btn-light">加入购物车</a>
+                      </div>
+                      <button type="button" class="btn btn-light wishlist-btn">
+                        <i class="icon icon-like"></i>
+                      </button>
+                      <button type="button" class="btn btn-light view-btn 
+                            d-flex">
+                        <i class="icon icon-crop"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-detail text-center">
+                    <h3 class="product-title">
+                      <a>蓝色抽褶吊带上衣</a>
+                    </h3>
+                    <span class="item-price text-primary">200CNY</span>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-4 product-item element-item position-relative">
+                  <div class="image-holder">
+                    <img src="images/product3.jpg" alt="product-item" class="product-image">
+                  </div>
+                  <div class="cart-concern ms-2">
+                    <div class="cart-button d-flex flex-wrap">
+                      <div class="btn-left">
+                        <a href="#" class="btn btn-medium btn-light">加入购物车</a>
+                      </div>
+                      <button type="button" class="btn btn-light wishlist-btn">
+                        <i class="icon icon-like"></i>
+                      </button>
+                      <button type="button" class="btn btn-light view-btn 
+                            d-flex">
+                        <i class="icon icon-crop"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-detail text-center">
+                    <h3 class="product-title">
+                      <a>玫瑰夏季长裙</a>
+                    </h3>
+                    <span class="item-price text-primary">350CNY</span>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-4 product-item element-item position-relative">
+                  <div class="image-holder">
+                    <img src="images/product4.jpg" alt="product-item" class="product-image">
+                  </div>
+                  <div class="cart-concern ms-2">
+                    <div class="cart-button d-flex flex-wrap">
+                      <div class="btn-left">
+                        <a href="#" class="btn btn-medium btn-light">加入购物车</a>
+                      </div>
+                      <button type="button" class="btn btn-light wishlist-btn">
+                        <i class="icon icon-like"></i>
+                      </button>
+                      <button type="button" class="btn btn-light view-btn 
+                            d-flex">
+                        <i class="icon icon-crop"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-detail text-center">
+                    <h3 class="product-title">
+                      <a>设计感黑色半身长裙</a>
+                    </h3>
+                    <span class="item-price text-primary">280CNY</span>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-4 product-item element-item position-relative">
+                  <div class="image-holder">
+                    <img src="images/product5.jpg" alt="product-item" class="product-image">
+                  </div>
+                  <div class="cart-concern ms-2">
+                    <div class="cart-button d-flex flex-wrap">
+                      <div class="btn-left">
+                        <a href="#" class="btn btn-medium btn-light">加入购物车</a>
+                      </div>
+                      <button type="button" class="btn btn-light wishlist-btn">
+                        <i class="icon icon-like"></i>
+                      </button>
+                      <button type="button" class="btn btn-light view-btn 
+                            d-flex">
+                        <i class="icon icon-crop"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-detail text-center">
+                    <h3 class="product-title">
+                      <a>浅金色飘带衬衫</a>
+                    </h3>
+                    <span class="item-price text-primary">249CNY</span>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-4 product-item element-item position-relative">
+                  <div class="image-holder">
+                    <img src="images/product6.jpg" alt="product-item" class="product-image">
+                  </div>
+                  <div class="cart-concern ms-2">
+                    <div class="cart-button d-flex flex-wrap">
+                      <div class="btn-left">
+                        <a href="#" class="btn btn-medium btn-light">加入购物车</a>
+                      </div>
+                      <button type="button" class="btn btn-light wishlist-btn">
+                        <i class="icon icon-like"></i>
+                      </button>
+                      <button type="button" class="btn btn-light view-btn 
+                            d-flex">
+                        <i class="icon icon-crop"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-detail text-center">
+                    <h3 class="product-title">
+                      <a>水钻腰带长裤</a>
+                    </h3>
+                    <span class="item-price text-primary">299CNY</span>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-4 product-item element-item position-relative">
+                  <div class="image-holder">
+                    <img src="images/product7.jpg" alt="product-item" class="product-image">
+                  </div>
+                  <div class="cart-concern ms-2">
+                    <div class="cart-button d-flex flex-wrap">
+                      <div class="btn-left">
+                        <a href="#" class="btn btn-medium btn-light">加入购物车</a>
+                      </div>
+                      <button type="button" class="btn btn-light wishlist-btn">
+                        <i class="icon icon-like"></i>
+                      </button>
+                      <button type="button" class="btn btn-light view-btn 
+                            d-flex">
+                        <i class="icon icon-crop"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-detail text-center">
+                    <h3 class="product-title">
+                      <a>蝴蝶拉链针织开衫</a>
+                    </h3>
+                    <span class="item-price text-primary">319CNY</span>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-4 product-item element-item position-relative">
+                  <div class="image-holder">
+                    <img src="images/product8.jpg" alt="product-item" class="product-image">
+                  </div>
+                  <div class="cart-concern ms-2">
+                    <div class="cart-button d-flex flex-wrap">
+                      <div class="btn-left">
+                        <a href="#" class="btn btn-medium btn-light">加入购物车</a>
+                      </div>
+                      <button type="button" class="btn btn-light wishlist-btn">
+                        <i class="icon icon-like"></i>
+                      </button>
+                      <button type="button" class="btn btn-light view-btn 
+                            d-flex">
+                        <i class="icon icon-crop"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-detail text-center">
+                    <h3 class="product-title">
+                      <a>黑白蛋糕裙套装</a>
+                    </h3>
+                    <span class="item-price text-primary">359CNY</span>
+                  </div>
+                </div>
+                <div class="col-md-4 mt-4 product-item element-item position-relative">
+                  <div class="image-holder">
+                    <img src="images/product9.jpg" alt="product-item" class="product-image">
+                  </div>
+                  <div class="cart-concern ms-2">
+                    <div class="cart-button d-flex flex-wrap">
+                      <div class="btn-left">
+                        <a href="#" class="btn btn-medium btn-light">加入购物车</a>
+                      </div>
+                      <button type="button" class="btn btn-light wishlist-btn">
+                        <i class="icon icon-like"></i>
+                      </button>
+                      <button type="button" class="btn btn-light view-btn 
+                            d-flex">
+                        <i class="icon icon-crop"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="product-detail text-center">
+                    <h3 class="product-title">
+                      <a>高级感毛呢外套</a>
+                    </h3>
+                    <span class="item-price text-primary">419CNY</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <nav class="navigation paging-navigation text-center padding-medium" role="navigation">
+              <div class="pagination loop-pagination d-flex justify-content-center align-items-center">
+                <a href="#">
+                  <i class="icon icon-angle-left"></i>
+                </a>
+                <span aria-current="page" class="page-numbers current">1</span>
+                <a class="page-numbers" href="#">2</a>
+                <a class="page-numbers" href="#">3</a>
+                <a class="page-numbers" href="#">4</a>
+                <a class="page-numbers" href="#">5</a>
+                <a href="#">
+                  <i class="icon icon-angle-right"></i>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </main>
+        <aside class="col-md-2 offset-md-1">
+          <div class="sidebar">
+
+            <div class="widget-menu border-bottom">
+              <div class="search-bar">
+                <form role="search" method="get" class="search-box">
+                  <input class="search-field text search-input" placeholder="搜索...." type="search">
+                  <a href="#" class="search-button search-toggle" data-selector="#header-wrap">
+                    <i class="icon icon-search"></i>
+                  </a>
+                </form>
+              </div>
+            </div>
+
+            <div class="widget-product-categories mt-4">
+              <h5 class="widget-title">商品分类</h5>
+              <ul class="product-categories sidebar-list list-unstyled">
+                <li class="cat-item">
+                  <a href="/collections/categories">全部商品</a>
+                </li>
+                <li class="cat-item">
+                  <a href="">店铺热销款</a>
+                </li>
+                <li class="cat-item">
+                  <a href="">新品上市</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-product-tags">
+              <h5 class="widget-title">标签</h5>
+              <ul class="product-tags sidebar-list list-unstyled">
+                <li class="tags-item">
+                  <a href="">上装</a>
+                </li>
+                <li class="tags-item">
+                  <a href="">下装</a>
+                </li>
+                <li class="tags-item">
+                  <a href="">外套</a>
+                </li>
+                <li class="tags-item">
+                  <a href="">裙子</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-size-filter">
+              <h5 class="widget-title">尺码大小分类</h5>
+              <ul class="product-tags sidebar-list list-unstyled">
+                <li class="tags-item">
+                  <a href="">XL</a>
+                </li>
+                <li class="tags-item">
+                  <a href="">L</a>
+                </li>
+                <li class="tags-item">
+                  <a href="">M</a>
+                </li>
+                <li class="tags-item">
+                  <a href="">S</a>
+                </li>
+                <li class="tags-item">
+                  <a href="">XS</a>
+                </li>
+              </ul>
+            </div>
+            <div class="widget-price-filter">
+              <h5 class="widget-title">价格分类</h5>
+              <ul class="product-tags sidebar-list list-unstyled">
+                <li class="tags-item">
+                  <a href="">200CNY以下</a>
+                </li>
+                <li class="tags-item">
+                  <a href="">200-300CNY</a>
+                </li>
+                <li class="tags-item">
+                  <a href="">300-400CNY</a>
+                </li>
+                <li class="tags-item">
+                  <a href="">400CNY以上</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+    </aside>
+  </div>
+  </div>
+  </div>
+  
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+
+  <!-- Bootstarp script ================================================== -->
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.0-alpha3/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+</body>
+</html>
